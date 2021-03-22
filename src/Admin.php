@@ -126,6 +126,15 @@ class Admin extends Client
         return self::jsonApiCall($method, $endpoint, $params);
     }
 
+    public function send_sms_passcodes($phoneid)
+    {
+        $method = "POST";
+        $endpoint = "/admin/v1/phones/" . $phoneid . "/send_sms_passcodes";
+        $params = [];
+
+        return self::jsonApiCall($method, $endpoint, $params);
+    }
+
     public function user_associate_phone($userid, $phoneid)
     {
         assert(is_string($userid));
