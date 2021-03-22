@@ -1,10 +1,6 @@
 {
-    "name": "duosecurity/duo_api_php",
+    "name": "yusufborucu/duo_api_php",
     "description": "A PHP implementation of the Duo API.",
-    "homepage": "https://duo.com/",
-    "support": {
-        "email": "support@duosecurity.com"
-    },
     "autoload": {
         "psr-4": {
             "DuoAPI\\": "src/"
